@@ -1,0 +1,18 @@
+<mat-card>
+    <form (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput [(ngModel)]="contact.name" name="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="email" [(ngModel)]="contact.email" name="email" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput [(ngModel)]="contact.message" name="message" required></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </form>
+  </mat-card>
+  

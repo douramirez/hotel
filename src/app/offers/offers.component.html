@@ -1,0 +1,10 @@
+<mat-card *ngFor="let offer of offers">
+    <mat-card-header>
+      <mat-card-title>{{ offer.title }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="offer.image" alt="{{ offer.title }}">
+    <mat-card-content>
+      <p>{{ offer.description }}</p>
+    </mat-card-content>
+  </mat-card>
+  

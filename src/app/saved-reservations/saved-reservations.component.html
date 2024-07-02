@@ -1,0 +1,11 @@
+<mat-card>
+    <h2>Reservas Guardadas</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let reservation of reservations">
+        <h3 mat-line>{{ reservation.hotel }}</h3>
+        <p mat-line>{{ reservation.arrivalDate }} - {{ reservation.departureDate }}</p>
+        <p mat-line>Número de Huéspedes: {{ reservation.guests }}</p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+  

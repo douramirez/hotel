@@ -1,0 +1,10 @@
+<mat-card *ngFor="let hotel of hotels">
+    <mat-card-header>
+      <mat-card-title>{{ hotel.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="hotel.image" alt="{{ hotel.name }}">
+    <mat-card-content>
+      <p>{{ hotel.description }}</p>
+    </mat-card-content>
+  </mat-card>
+  

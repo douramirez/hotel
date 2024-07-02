@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Confirmación de Reserva</h1>
+<div mat-dialog-content>
+  <p>Reserva realizada en <strong>{{ data.hotel }}</strong></p>
+  <p>Del <strong>{{ data.arrivalDate }}</strong> al <strong>{{ data.departureDate }}</strong></p>
+  <p>Número de Huéspedes: <strong>{{ data.guests }}</strong></p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">Cerrar</button>
+</div>
