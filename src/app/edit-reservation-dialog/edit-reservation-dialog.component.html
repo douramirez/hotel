@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Editar Reserva</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Hotel</mat-label>
+    <input matInput [(ngModel)]="data.reservation.hotel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fecha de Llegada</mat-label>
+    <input matInput [(ngModel)]="data.reservation.arrivalDate">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fecha de Salida</mat-label>
+    <input matInput [(ngModel)]="data.reservation.departureDate">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Número de Huéspedes</mat-label>
+    <input matInput [(ngModel)]="data.reservation.guests">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="save()">Guardar</button>
+</div>

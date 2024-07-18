@@ -10,7 +10,7 @@ export class HotelsComponent implements OnInit {
   hotels = [
     {
       name: 'Hotel Santiago',
-      image: 'assets/hotel-santiago.jpg',
+      image: '/src/assets/img/466861409.jpg',
       description: 'Un lugar acogedor en el corazón de Santiago.'
     },
     {

@@ -1,11 +1,16 @@
-<mat-card>
-    <h2>Reservas Guardadas</h2>
-    <mat-list>
-      <mat-list-item *ngFor="let reservation of reservations">
-        <h3 mat-line>{{ reservation.hotel }}</h3>
-        <p mat-line>{{ reservation.arrivalDate }} - {{ reservation.departureDate }}</p>
-        <p mat-line>Número de Huéspedes: {{ reservation.guests }}</p>
-      </mat-list-item>
-    </mat-list>
-  </mat-card>
-  
+<div class="container">
+  <h2>Reservas Guardadas</h2>
+  <div class="reservation-list">
+    <div *ngFor="let reservation of reservations; let i = index" class="reservation-item">
+      <div class="reservation-details">
+        <h3>{{ reservation.hotel }}</h3>
+        <p>Fecha: {{ reservation.arrivalDate | date: 'dd/MM/yyyy' }} - {{ reservation.departureDate | date: 'dd/MM/yyyy' }}</p>
+        <p>Número de Huéspedes: {{ reservation.guests }}</p>
+      </div>
+      <div class="buttons">
+        <button mat-raised-button color="primary" (click)="openEditDialog(i)">Editar</button>
+        <button mat-raised-button color="warn" (click)="deleteReservation(i)">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>

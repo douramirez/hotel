@@ -28,6 +28,7 @@ import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { SavedReservationsComponent } from './saved-reservations/saved-reservations.component';
+import { EditReservationDialogComponent } from './edit-reservation-dialog/edit-reservation-dialog.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { SavedReservationsComponent } from './saved-reservations/saved-reservati
     ContactComponent,
     NavbarComponent,
     ConfirmationDialogComponent,
-    SavedReservationsComponent
+    SavedReservationsComponent,
+    EditReservationDialogComponent
   ],
   imports: [
    BrowserModule,
